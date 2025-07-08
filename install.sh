@@ -68,16 +68,16 @@ fi
 
 # Clone the repository
 echo -e "${GREEN}📥 Cloning repository...${NC}"
-rm -rf sni-checker
-git clone https://github.com/yourusername/sni-checker.git
-cd sni-checker
+rm -rf SNI_Checker
+git clone https://github.com/amirH3bashi/SNI_Checker.git
+cd SNI_Checker
 
 # Build the binary
 echo -e "${GREEN}🔨 Building project...${NC}"
 go mod tidy
-go build -o sni-checker main.go
+go build -o SNI_Checker main.go
 
 # Run the binary
 echo -e "${GREEN}✅ Installation complete!${NC}"
 echo -e "${GREEN}🚀 Running SNI Checker...${NC}"
-./sni-checker
+./SNI_Checker
